@@ -167,6 +167,7 @@ export class FieldMetadataValidationService {
     objectMetadata,
     existingFieldMetadata,
   }: ValidateFieldMetadataArgs): Promise<void> {
+        
     if (fieldMetadataInput.name) {
       try {
         validateMetadataNameOrThrow(fieldMetadataInput.name);
